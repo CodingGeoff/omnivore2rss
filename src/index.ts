@@ -2,7 +2,10 @@ import { Context, Hono } from 'hono'
 import { GraphQLFetcher } from './request'
 import { convertArticlesToRSS } from './utils'
 
-const defaultUrl = 'https://api-prod.omnivore.app/api/graphql'
+// const defaultUrl = 'https://api-prod.omnivore.app/api/graphql'
+
+const defaultUrl = 'http://localhost:4000/api/graphql'
+
 
 type Bindings = {
   OMNIVORE_API_URL: string
